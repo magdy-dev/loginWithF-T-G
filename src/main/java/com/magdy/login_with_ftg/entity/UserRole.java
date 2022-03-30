@@ -1,5 +1,9 @@
 package com.magdy.login_with_ftg.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -11,6 +15,9 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "User_Role", uniqueConstraints = {  @UniqueConstraint(name = "USER_ROLE_UK",  columnNames = { "User_Id", "Role_Id" }) })
 public class UserRole {
 
@@ -27,28 +34,6 @@ public class UserRole {
     @JoinColumn(name = "Role_Id", nullable = false)
     private AppRole appRole;
 
-    public long getId() {
-        return id;
-    }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public AppUser getAppUser() {
-        return appUser;
-    }
-
-    public void setAppUser(AppUser appUser) {
-        this.appUser = appUser;
-    }
-
-    public AppRole getAppRole() {
-        return appRole;
-    }
-
-    public void setAppRole(AppRole appRole) {
-        this.appRole = appRole;
-    }
 
 }
