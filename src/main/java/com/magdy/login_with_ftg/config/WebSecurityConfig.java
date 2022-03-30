@@ -1,5 +1,6 @@
 package com.magdy.login_with_ftg.config;
 
+import com.magdy.login_with_ftg.entity.AppRole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;

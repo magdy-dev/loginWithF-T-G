@@ -10,6 +10,7 @@ import javax.transaction.Transactional;
 
 import com.magdy.login_with_ftg.entity.AppRole;
 import com.magdy.login_with_ftg.entity.AppUser;
+import com.magdy.login_with_ftg.form.AppUserForm;
 import com.magdy.login_with_ftg.utils.EncrytedPasswordUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.social.connect.Connection;

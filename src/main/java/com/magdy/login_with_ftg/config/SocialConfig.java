@@ -1,6 +1,8 @@
 package com.magdy.login_with_ftg.config;
 import javax.sql.DataSource;
 
+import com.magdy.login_with_ftg.repository.AppUserDAO;
+import com.magdy.login_with_ftg.service.ConnectionSignUpImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

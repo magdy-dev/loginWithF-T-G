@@ -1,6 +1,7 @@
 package com.magdy.login_with_ftg.utils;
 
 import com.magdy.login_with_ftg.entity.AppUser;
+import com.magdy.login_with_ftg.service.SocialUserDetailsImpl;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
