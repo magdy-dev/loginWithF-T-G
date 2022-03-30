@@ -64,7 +64,7 @@ public class MainController {
 
     @RequestMapping(value = { "/", "/welcome" }, method = RequestMethod.GET)
     public String welcomePage(Model model) {
-        model.addAttribute("message", "This is welcome page!");
+        model.addAttribute("message", " Welcome To Youser page!");
         return "welcomePage";
     }
 
